@@ -4,10 +4,10 @@ import 'dart:async';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:intl_phone_field/country_picker_dialog.dart';
-import 'package:intl_phone_field/helpers.dart';
+import 'package:intl_phone_field_custom/country_picker_dialog.dart';
+import 'package:intl_phone_field_custom/helpers.dart';
+import 'package:intl_phone_field_custom/countries.dart';
 
-import './countries.dart';
 import './phone_number.dart';
 
 class IntlPhoneField extends StatefulWidget {
