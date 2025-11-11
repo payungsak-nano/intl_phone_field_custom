@@ -24,6 +24,8 @@ class PickerDialogStyle {
 
   final double? width;
 
+  final TextStyle? searchTextStyle;
+
   PickerDialogStyle({
     this.backgroundColor,
     this.countryCodeStyle,
@@ -35,6 +37,7 @@ class PickerDialogStyle {
     this.searchFieldInputDecoration,
     this.searchFieldPadding,
     this.width,
+    this.searchTextStyle,
   });
 }
 
@@ -97,6 +100,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
             Padding(
               padding: widget.style?.searchFieldPadding ?? const EdgeInsets.all(0),
               child: TextField(
+                style: widget.style?.searchTextStyle,
                 cursorColor: widget.style?.searchFieldCursorColor,
                 decoration: widget.style?.searchFieldInputDecoration ??
                     InputDecoration(
